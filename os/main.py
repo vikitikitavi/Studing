@@ -55,7 +55,8 @@ def clear_tree(path):
             os.rmdir(name, dir_fd=rootfd)
 
 
-clear_tree(PATH)
-create_pretty_tree(PATH, 5)
-view_fs_tree(PATH)
-clear_tree(PATH)
+if __name__ == '__main__':
+    clear_tree(PATH)
+    create_pretty_tree(PATH, 5)
+    view_fs_tree(PATH)
+    clear_tree(PATH)

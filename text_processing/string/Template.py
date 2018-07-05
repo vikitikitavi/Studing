@@ -3,7 +3,7 @@ from string import Template
 class_template = """
 class $class_name:
     def __init__(self, arg):
-        self.$name = arg 
+        self.$name = arg
 """
 
 class_a = Template(class_template).substitute(
